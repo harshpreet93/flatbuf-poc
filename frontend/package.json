@@ -1,0 +1,38 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register src/tests/**/*.test.ts",
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "prepublish": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/http": "^7.1.2",
+    "@types/flatbuffers": "^1.9.0",
+    "@types/node": "^10.12.12",
+    "@types/request": "^2.48.1",
+    "flatbuffers": "^1.10.2",
+    "request": "^2.88.0",
+    "tslint": "^5.11.0",
+    "typed-rest-client": "^1.0.11"
+  },
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}
